@@ -1,0 +1,156 @@
+body {
+  font-family: 'IM Fell English SC', serif;
+  margin: 0px;
+  background-color: #007f5f;
+  color: #ffc800;
+  cursor: default;
+}
+
+#title, .title {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 64px;
+  font-weight: bolder;
+  margin: 15px 0 15px 0;
+  color: #ffc800;
+  text-decoration: underline #804000 10px;
+  text-align: center;
+}
+
+.player-title {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 32px;
+  text-decoration: underline #804000 4px;
+}
+
+.points {
+  text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 28px;
+}
+
+.card {
+  width: 150px;
+  height: 214px;
+  border-radius: 8px;
+  background-image: url(images/deck.png);
+  background-position-x: -0px;
+  margin-bottom: 16px;
+  box-shadow: 5px 5px 5px #355834;
+}
+
+.cards {
+  width: 500px;
+  height: 460px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+
+.game {
+  display: grid;
+  grid-template-columns: 500px 500px;
+  justify-content: space-around;
+}
+
+.btn-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.buttons {
+  width: 150px;
+  font-family: 'IM Fell English SC', serif;
+  color: #ffc800;
+  background-color: #804000;
+  padding: 10px 20px 10px 20px;
+  box-shadow: 5px 5px 5px #46351D;
+  font-size: 24px;
+  border: 5px solid #804000 ;
+  border-radius: 8px;
+}
+
+.buttons:hover {
+  color: #804000;
+  background-color: #ffc800;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#start-btn {
+  width: 200px;
+}
+
+.modal, .bust-modal, .bj-modal, .loose-modal, .win-modal {
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0,0,0); 
+  background-color: rgba(0,0,0,0.4);
+}
+
+.bust-modal {
+  display: none;
+}
+
+.bj-modal {
+  display: none;
+}
+
+.loose-modal {
+  display: none;
+}
+
+.win-modal {
+  display: none;
+}
+
+.button-modal {
+  display: none;
+}
+
+.modal-content {
+  width: 70%;
+  height: 90%;
+  display: block;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #007f5f;
+  text-align: center;
+  font-size: 28px;
+  border: solid transparent;
+  border-radius: 10px;
+}
+
+.bust-modal-content, .bj-modal-content, .loose-modal-content, .win-modal-content {
+  width: 40%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  background-color: #007f5f;
+  text-align: center;
+  font-size: 28px;
+  border: solid transparent;
+  border-radius: 10px;
+}
+
+

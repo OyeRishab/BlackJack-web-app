@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&family=Roboto&display=swap" rel="stylesheet"> 
+  <link rel="icon" href="images/logo.png" type="image/icon type">
+  <title>Black Jack</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <p id="title">Black Jack</p>
+  <div class="game">
+
+    <div>
+      <p class="player-title">Bot Cards</p>
+      <p id="bpoints" class="points">Points : 0</p>
+      <div id="bot_card_container" class="cards"></div>
+    </div>
+    
+    <div>
+      <p class="player-title">Your Cards</p>
+      <p id="upoints" class="points">Points : 0</p>
+      <div id="user_card_container" class="cards"></div>
+      <div id="button-modal" class="button-modal">
+        <div class="btn-container">
+          <button class="buttons" id="hit" onclick="user_new_card()">HIT!</button>
+          <button class="buttons" id="stay">STAY!</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <p style="margin-top: 80px;" class="title">Black Jack</p>
+      <p>Welcome to the game of Black Jack<br>
+        built and designed by Rishab Jain
+        <br><br><br>
+        To Win :<br> 
+        your points should be greater than the bot points<br>
+        or score a perfect 21<br>
+        and you must not exceed more than 21 points<br><br><br>
+      </p>
+      <button id="start-btn" class="buttons">Start Game</button>
+    </div>
+  </div>
+
+  <div id="bust-modal" class="bust-modal">
+    <div id="bust-modal-content" class="bust-modal-content">
+      <p>oh no!<br>It's a BUST<br>You Loose!</p>
+      <button onClick="window.location.reload()" class="buttons">Restart</button>
+    </div>
+  </div>
+
+  <div id="bj-modal" class="bj-modal">
+    <div id="bj-modal-content" class="bj-modal-content">
+      <p>Let's GO!<br>It's a Black Jack<br>You Win!</p>
+      <button onClick="window.location.reload()" class="buttons">Restart</button>
+    </div>
+  </div>
+
+  <div id="loose-modal" class="loose-modal">
+    <div id="loose-modal-content" class="loose-modal-content">
+      <p>oh no!<br>You Loose!</p>
+      <button onClick="window.location.reload()" class="buttons">Restart</button>
+    </div>
+  </div>
+
+  <div id="win-modal" class="win-modal">
+    <div id="win-modal-content" class="win-modal-content">
+      <p>Let's GO!<br>You Win!</p>
+      <button onClick="window.location.reload()" class="buttons">Restart</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
