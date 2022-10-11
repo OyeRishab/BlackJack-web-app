@@ -115,6 +115,3 @@ start_btn.addEventListener('click', function(){
   setTimeout(user_new_card, 3000);
   setTimeout(function(){document.getElementById('button-modal').style.display = 'block';}, 3000)
 })
-
-
-
