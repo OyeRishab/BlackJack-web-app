@@ -48,9 +48,9 @@ function user_new_card(){
     let newCard = document.createElement('div');
     newCard.setAttribute('id', `${user_cards.length+1}`);
     newCard.setAttribute('class', 'card');
+    newCard.style.backgroundPositionX=`${card_pos}px`;
     user_card_container.appendChild(newCard);
     
-    document.getElementById(`${user_cards.length+1}`).style.backgroundPositionX=`${card_pos}px`;
     calc_user_points();
     if (user_points>21){
       setTimeout(function(){bust_modal.style.display = 'block';}, 500)
