@@ -79,19 +79,19 @@ function bot_new_card(){
     document.getElementById(`b${bot_cards.length+1}`).style.backgroundPositionX=`${bcard_pos}px`;  
     calc_bot_points();
     if (bot_points>user_points&&user_hit==0&&bot_points<=21){
-      setTimeout(function(){document.getElementById('loose-modal').style.display = 'block';}, 1000)
+      setTimeout(function(){document.getElementById('loose-modal').style.display = 'block';}, 2000)
     }
     else if(bot_points>21&&user_points<=21&&user_hit==0){
-      setTimeout(function(){document.getElementById('win-modal').style.display = 'block'}, 1000)
+      setTimeout(function(){document.getElementById('win-modal').style.display = 'block'}, 2000)
     }
     else if(bot_points==17&&bot_points>user_points&&user_hit==0){
-      setTimeout(function(){document.getElementById('loose-modal').style.display = 'block';}, 1000)
+      setTimeout(function(){document.getElementById('loose-modal').style.display = 'block';}, 2000)
     }
     else if(bot_points==17&&user_points>bot_points&&user_hit==0){
-      setTimeout(function(){document.getElementById('win-modal').style.display = 'block'}, 1000)
+      setTimeout(function(){document.getElementById('win-modal').style.display = 'block'}, 2000)
     }
     else if(user_points==bot_points&&user_points<21&&user_hit==0){
-      setTimeout(function(){document.getElementById('win-modal').style.display = 'block'}, 1000)
+      setTimeout(function(){document.getElementById('win-modal').style.display = 'block'}, 2000)
     }
     
   }
